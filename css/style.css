@@ -1,0 +1,391 @@
+body {
+margin: 0;
+overflow-x: hidden;
+transition: all .5s;
+background-color: #121212;
+color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: coral;
+border-radius: 15px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+i {
+margin-right: 10px;
+}
+
+
+/*
+    Kontent
+*/
+
+#nav2 {
+ display: none;
+ top: 0;
+ position: fixed;
+}
+
+/* Navigacija */
+.navbar {
+width: 100%;
+margin: 0;
+border: none;
+transition: all .5s;
+background-color: #1a1a1a;
+border: none;
+color: white;
+box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+overflow: hidden;
+}
+
+.navbar a {
+  padding: 14px 16px;
+  transition: 0.5s;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  float: left;
+}
+
+.navbar a:hover {
+background-color: #a1a1a1;
+}
+
+.navbar .search {
+  outline: none;
+  background-color: #1a1a1a;
+  padding: 5px;
+  border: none;
+  width: 73px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border-bottom: 2px solid #1a1a1a;
+  transition: all .5s;
+  color: white;
+  margin-top: 9px;
+}
+
+.navbar .search:focus {
+  border-bottom: 2px solid coral;
+  width: 170px;
+}
+/* Padajuci zanrovi */
+#dropicon {
+color: white;
+}
+
+#genres {
+background-color: #1a1a1a;
+border: none;
+color: white;
+display: none;
+width: 100%;
+padding: 15px 15px 15px 0;
+margin: 0;
+z-index: 1;
+transition: all .5s;
+}
+
+#genres a {
+padding: 15px;
+transition: 0.5s;
+color: white;
+font-family: arial;
+text-decoration: none;
+}
+
+#genres a:hover {
+background-color: #999999;
+}
+
+#icon {
+transition: all .5s;
+}
+
+
+/* Filmovi */
+.movies {
+margin-left: 35px;
+z-index: 0;
+font-family: Andale Mono, monospace;
+margin-top: 60px;
+}
+
+.movie {
+  float: left;
+}
+
+/* Divovi za filmove */
+li {
+list-style: none;
+float: left;
+color: #121212;
+width: 155px;
+margin-right: 32px;
+transition: all 0.5s;
+font-size: 3px;
+margin-bottom: 15px;
+}
+
+.movie:hover {
+filter: blur(15%);
+background-color: #212121;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+transform: scaleX(102%);
+}
+
+.movie img {
+height: 180px;
+width: 130px;
+transition: all .5s;
+}
+
+.movie:hover img {
+  filter: blur(1.5px);
+  transform: scale(110%);
+  transform: rotate(8deg);
+}
+
+.movies a {
+display: inline-block;
+text-decoration: none;
+color: black;
+float: left;
+margin-left: 20px;
+}
+
+.movie h3 {
+color: white;
+font-size: 15px;
+text-align: center;
+opacity: 0;
+transition: all .5s;
+font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.movie:hover h3 {
+opacity: 1;
+}
+
+.movies span {
+  display: none;
+  font-size: 15px;
+}
+
+.movie:hover span {
+  display: inline-block;
+}
+
+.home1 {
+display: none;
+}
+
+.container {
+margin-top: 20px;
+overflow: hidden;
+}
+
+.btn {
+border: none;
+cursor: pointer;
+}
+
+.btn:hover {
+background-color: #ddd;
+}
+
+.btn.active {
+background-color: #666;
+color: white;
+}
+
+/*
+.button {
+padding: 15px;
+border: none;
+width: 80px;
+transition: all .5s;
+background: white;
+}
+
+.button:hover {
+cursor: pointer;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background: #FCFCFC;
+}
+*/
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+responsive
+*/
+
+@media only screen and (max-width: 1115px) {
+ .genres {
+   justify-content: center;
+   align-items: center;
+ }
+
+ .genres a {
+   display: inline-block;
+   font-size: 24px;
+ }
+}
+
+@media only screen and (max-width: 800px) {
+
+.navbar a {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+
+
+.movie {
+width: 300px;
+height: 450px;
+margin-bottom: 70px;
+}
+
+.movie img {
+width: 300px;
+height: 400px;
+}
+
+li {
+width: 300px;
+height: 450px;
+margin-bottom: 70px;
+}
+
+li img {
+width: 300px;
+height: 400px;
+}
+
+.home1 {
+  display: block;
+  text-align: center;
+}
+
+.home2 {
+  display: none;
+}
+
+.navbar input[type=text] {
+  padding: 20px;
+}
+
+.navbar input[type=text]:focus {
+  padding: 20px;
+  width: 100%;
+}
+
+.switch {
+  display: none;
+}
+}
+
+nav {
+    height: 70px;
+    background:gray;
+}
+
+.checked {
+  color: orange;
+}
+
+
+/* Recenzije */
+h1 {
+  text-align: center;
+}
+
+.recenzija {
+  margin: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+.recenzija img {
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin-right: 20px;
+}
+
+.recenzija p {
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Snell Roundhand", cursive;
+  font-style: oblique;
+  width: 1600px;
+}
+
+.recenzija iframe {
+  float: right;
+  display: inline-block;
+  border: none;
+  width: 550px;
+  height: 330px;
+  margin-left: 70px;
+}
+
+.naslov {
+  font-family: "Snell Roundhand", cursive;
+}
+
+h4 {
+  text-align: center;\
+}
+
+.glumac {
+  color: #3d77ff;
+  text-decoration: none;
+}
+
+.glumac:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  text-align: center;
+}

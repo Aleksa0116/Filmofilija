@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr"> <!-- Jezik srpski, left-to-right -->
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+     <meta name="description" content="Recenzije gledanih filmova">
+     <meta name="author" content="">
+     <meta http-equiv="content-type" content="text/html; charset=iso-8859-2">
+    <link rel="stylesheet" href="CSS/style.css"> <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Filmofilija - Pocetna</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/7f7b7967c4.js" crossorigin="anonymous"></script> <!-- Ikonice -->
+    <script type="text/javascript" src="C:\Users\Zabava\OneDrive\Documents\Filmofilija\JS\script.js"></script> <!-- Skripta -->
+
+<!-- Navigacija -->
+<div id='nav' class="navbar">
+  <a class="home1" href="index.html">Po&#269;etna</a>
+  <a class="home1" href="javascript:void(0)" onclick="gendrop()"><i class="fas fa-bars"></i></a>
+  <a class="home2" href="index.html">Po&#269;etna</a>
+  <a class="home2" href="javascript:void(0)" onclick="gendrop()" class='drop' title="Zanrovi"><i id='dropicon' class="fas fa-arrow-down"></i></i>&#381;anrovi</a>
+
+  <a class="home2" href="o-nama.html" class="usermodal">O nama</a>
+
+  <input class="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Pretrazi..." />
+
+  </div>
+
+<!-- Zanrovi -->
+  <div id="genres" class="genres">
+    <a onmouseover="myOverFunction()" class="close" onclick="gendrop()" href="javascript:void(0)"><i id='icon' class="fas fa-times"></i>Zatvori</a>
+    <a href="filmovi/horori/index.html" class="btn">Horori</a>
+    <a href="filmovi/akcije/index.html" class="btn">Akcija</a>
+    <a href="filmovi/komedije/index.html" class="btn">Komedije</a>
+    <a href="filmovi/psihodelicni/index.html" class="btn">Psihodeli&#269;ni</a>
+    <a href="filmovi/serijali/index.html" class="btn">Serijali</a>
+  </div>
+
+  <div class="movies">
+
+    <h2>Filmovi i serijali</h2>
+
+<ul id="myUL">
+
+<div class="container">
+
+<li>Grown Ups
+    <a href="filmovi/komedije/grown-ups.html">
+    <div class="movie">
+      <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/230599_GROWN%20UPS%20_2010_1400x2100_English.jpg?itok=Wumkl75R" alt="movie">
+      <h3>Grown Ups</h3>
+    </div>
+    </a>
+  </li>
+
+  <li>It
+      <a href="filmovi/horori/it.html">
+      <div class="movie">
+      <img src="https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_FMjpg_UX1000_.jpg" alt="movie">
+      <h3>It</h3>
+      </div>
+      </a>
+    </li>
+
+<li>Murder Mistery
+    <a href="filmovi/komedije/murder-mistery.html">
+    <div class="movie">
+    <img src="https://m.media-amazon.com/images/M/MV5BNTA2YTI5YjUtZWI4Zi00NWQ5LWFiYmEtOTBmNTUyNDAwNjllXkEyXkFqcGdeQXVyNjIzNzM4NzA@._V1_.jpg" alt="movie">
+    <h3>Murder Mistery</h3>
+    </div>
+    </a>
+  </li>
+
+  <li>Avengers Endgame
+      <a href="filmovi/akcije/avengers-endgame.html">
+      <div class="movie">
+      <img src="https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810" alt="movie">
+      <h3>Avengers Endgame</h3>
+      </div>
+      </a>
+    </li>
+
+
+
+</div>
+  </ul>
+  </div>
+  </body>
+</html>
